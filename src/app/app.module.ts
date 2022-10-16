@@ -10,6 +10,7 @@ import { AdminMainComponent } from './admin/layouts/admin-main/admin-main.compon
 import { ContentComponent } from './admin/components/content/content.component';
 import { ProductAddComponent } from './admin/components/product-add/product-add.component';
 import { ProductListComponent } from './admin/components/product-list/product-list.component';
+import { ProductDetailComponent } from './admin/components/product-detail/product-detail.component';
 
 
 
@@ -23,6 +24,7 @@ import { ProductListComponent } from './admin/components/product-list/product-li
     ContentComponent,
     ProductListComponent,
     ProductAddComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
