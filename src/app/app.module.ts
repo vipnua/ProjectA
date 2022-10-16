@@ -8,6 +8,10 @@ import { AdminFooterComponent } from './admin/layouts/admin-footer/admin-footer.
 import { AdminSiderBarComponent } from './admin/layouts/admin-sider-bar/admin-sider-bar.component';
 import { AdminMainComponent } from './admin/layouts/admin-main/admin-main.component';
 import { ContentComponent } from './admin/components/content/content.component';
+import { ProductAddComponent } from './admin/components/product-add/product-add.component';
+import { ProductListComponent } from './admin/components/product-list/product-list.component';
+
+
 
 @NgModule({
   declarations: [
@@ -17,6 +21,8 @@ import { ContentComponent } from './admin/components/content/content.component';
     AdminSiderBarComponent,
     AdminMainComponent,
     ContentComponent,
+    ProductListComponent,
+    ProductAddComponent,
   ],
   imports: [
     BrowserModule,
