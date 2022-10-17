@@ -1,5 +1,6 @@
 import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { IProduct } from 'src/interface/Product';
@@ -15,21 +16,20 @@ import { ProductService } from 'src/service/product.service';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
+  // product: IProduct = {
+  //   id: 0,
+  //   name: "",
+  //   price: 0,
+  //   description: "",
+  //   imageUrl: ""
+  // };
 
-
-
-  product: IProduct = {
-    id: 0,
-    name: "",
-    price: 0,
-    description: "",
-    imageUrl: ""
-  };
 
 
   constructor(private productService: ProductService,
     private router: Router,
-    private http: HttpClient) { }
+    private http: HttpClient,
+    private fb: FormBuilder) { }
 
   ngOnInit(): void {
 
@@ -51,15 +51,25 @@ export class ProductAddComponent implements OnInit {
 
   // }
 
+  productData = this.fb.group({
+    "name": ['', [Validators.required, Validators.minLength(4)]],
+    "price": ['', [Validators.required]],
+    'description': ['']
+  })
+
+  get f() {
+    return this.productData.controls
+  }
+
+  onHandleAdd(product: IProduct, fileImage: any) {
 
 
-  onHandleAdd(fileImage: any) {
-    this.product.imageUrl = fileImage[0].name
-    return this.productService.addProduct(this.product).subscribe(data => {
+    product.imageUrl = fileImage[0].name
+    return this.productService.addProduct(product).subscribe(data => {
       if (typeof data === 'object') {
         const formData = new FormData();
         formData.append('Files', fileImage[0])
-        formData.append('imageUrl', this.product.imageUrl)
+        formData.append('imageUrl', product.imageUrl)
 
         this.productService.uploadFile(formData)
       }

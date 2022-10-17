@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct } from 'src/interface/Product';
 import { ProductService } from 'src/service/product.service';
@@ -12,9 +13,19 @@ export class ProductUpdateComponent implements OnInit {
 
   constructor(private productService: ProductService,
     private activateRoute: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    private fb: FormBuilder) { }
 
   product!: IProduct
+  productData = this.fb.group({
+    "name": ['', [Validators.required, Validators.minLength(4)]],
+    "price": ['', [Validators.required]],
+    'description': ['']
+  })
+
+  get f() {
+    return this.productData.controls
+  }
 
   ngOnInit(): void {
     this.activateRoute.params.subscribe(params => {

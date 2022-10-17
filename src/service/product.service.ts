@@ -18,7 +18,7 @@ export class ProductService {
 
   addProduct(product: IProduct): Observable<IProduct> {
     let header = new HttpHeaders();
-    header.append('Content-Type', 'application/json');
+    header.append('Content-Type', 'application/json;charset=UTF-8');
     return this.httpClient.post<IProduct>(`${this.API}`, product, { headers: header })
   }
 
@@ -35,7 +35,7 @@ export class ProductService {
   }
 
   uploadFile(body: any): Observable<any> {
-    return this.httpClient.post(`https://res.cloudinary.com/dywccbjry/image/upload`, body)
+    return this.httpClient.post(`https://localhost:4200/image/upload`, body)
   }
 
   // uploadImage(file: File): any {

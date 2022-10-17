@@ -4,29 +4,46 @@
             <div class="card-head">
                 <h5 class="card-title">Update Product</h5>
             </div>
-            <form (submit)="onHandleEdit()" *ngIf="product" enctype="multipart/form-data">
+            <form [formGroup]="productData" (submit)="onHandleEdit()" *ngIf="product" enctype="multipart/form-data">
                 <div class="form-group">
                     <label class="form-label" for="cf-full-name">Name</label>
-                    <input type="text" class="form-control" name="product.name" [(ngModel)]="product.name">
+                    <input type="text" class="form-control" formControlName="name" [(ngModel)]="product.name">
+                    <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)">
+                        <div *ngIf="f.name.errors">
+                            <div *ngIf="f.name.errors['required']">
+                                <small class="form-text alert-danger p-1">Name is not required.</small>
+                            </div>
+                            <div *ngIf="f.name.errors['minlength']">
+                                <small class="form-text alert-danger p-1">Name must be 4 or more characters.</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="cf-email-address">Price</label>
-                    <input type="number" class="form-control" name="product.price" [(ngModel)]="product.price">
+                    <input type="number" class="form-control" formControlName="price" [(ngModel)]="product.price">
+                    <div *ngIf="f.price.invalid && (f.price.dirty || f.price.touched)">
+                        <div *ngIf="f.price.errors">
+                            <div *ngIf="f.price.errors['required']">
+                                <small class="form-text alert-danger p-1">Name is not required.</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="cf-phone-no">Image</label>
-                    <input type="file" class="form-control" name="product.imageUrl">
+                    <input type="file" class="form-control" formControlName="imageUrl">
                     <img src="" alt="">
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="cf-default-textarea">Description</label>
                     <div class="form-control-wrap">
-                        <textarea class="form-control form-control-sm" name="product.description"
+                        <textarea class="form-control form-control-sm" formControlName="description"
                             [(ngModel)]="product.description" placeholder="Write your description"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-lg btn-primary">Update</button>
+                    <button type="submit" class="btn btn-lg btn-primary" [disabled]="!productData.valid">Update</button>
 
                 </div>
             </form>
