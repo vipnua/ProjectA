@@ -10,6 +10,9 @@ export class AdminHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
+  Signout(){
+    localStorage.removeItem("email");
+  }
 }
