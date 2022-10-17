@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 import { ProductAddComponent } from './admin/components/product-add/product-add.component';
 import { ProductListComponent } from './admin/components/product-list/product-list.component';
 
+
+
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { MainLoginComponent } from './admin/auth/layouts/main-login/main-login.component';
 
@@ -12,6 +16,7 @@ import { AdminMainComponent } from './admin/layouts/admin-main/admin-main.compon
 
 const routes: Routes = [
 
+
  {path:'admin/login',component:MainLoginComponent},
   {
     path: 'admin', component: AdminMainComponent, children: [
@@ -19,6 +24,8 @@ const routes: Routes = [
       { path: 'product-add', component: ProductAddComponent }
     ]
   }
+,
+  { path: '', component: HomePageComponent }
 
 ];
 

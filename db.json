@@ -1,5 +1,100 @@
 {
-    "users": [
+   "users": [
       {"email": "admin@gmail.com", "password": "12345678", "role":1}
     ]
-  }
+  },
+    "products": [
+        {
+            "id": 1,
+            "name": "Laptop Acer Nitro 5 Gaming AN515 45 R6EV R5",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Acer Aspire 7 Gaming A715 42G R4XX ",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Intel Gen 12INTEL GEN 12Acer Nitro 5 Tiger AN515 58 773Y i7 12700H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Acer Nitro 5 Gaming AN515 45 R86D R7 5800H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Acer Nitro 5 Gaming AN515 57 720A i7 11800H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Intel Gen 12INTEL GEN 12Acer Nitro 5 Tiger AN515 58 52SP i5 12500H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Acer Nitro 5 Gaming AN515 57 553E i5 11400H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Acer Nitro 5 Gaming AN515 57 54MV i5 11400H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Acer Aspire 7 Gaming A715 43G R8GA R5 5625U",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Acer Aspire 7 Gaming A715 42G R05G R5 5500U",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Acer Aspire 7 Gaming A715 42G R05G R5 5500U",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Acer Aspire 7 Gaming A715 75G 58U4 i5 10300H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Acer Aspire 7 Gaming A715 75G 58U4 i5 10300H",
+            "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
+            "price": 19000000,
+            "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+        }
+    ]
+}
+
