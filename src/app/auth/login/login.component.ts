@@ -17,8 +17,9 @@ export class LoginComponent implements OnInit {
       password:[''],
   })
   }
+  API = 'http://localhost:3000/users';
   login(){
-    this.http.get<any>('http://localhost:3000/users')
+    this.http.get<any>(this.API)
     .subscribe(res=>{
       const user = res.find((a:any)=>{
         return a.email  === this.loginForm.value.email  && a.password === this.loginForm.value.password;

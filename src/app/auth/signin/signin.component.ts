@@ -17,8 +17,9 @@ export class SigninComponent implements OnInit {
       email:[''],
       password:[''],
   })}
+  API = 'http://localhost:3000/users';
   signin(){
-    this.http.get<any>('http://localhost:3000/users')
+    this.http.get<any>(this.API)
     .subscribe(res=>{
          const user = res.find((a:any)=>{
          return a.email  === this.signinForm.value.email;
@@ -26,7 +27,7 @@ export class SigninComponent implements OnInit {
       if(!user){   
         const data = this.signinForm.value;
         console.log(data);
-        this.http.post<object>('http://localhost:3000/users',data).subscribe({
+        this.http.post<object>(this.API,data).subscribe({
         next: (success)=>  alert("signin success!"),
         })
         this.router.navigate(['home']);
