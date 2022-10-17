@@ -1,9 +1,9 @@
 <app-header></app-header>
-<div class="container py-4 my-4 mx-auto d-flex flex-column">
+<div class="container py-4 my-4 mx-auto d-flex flex-column" *ngIf="product">
     <div class="header">
         <div class="row r1">
             <div class="col-md-9 abc">
-                <h1>Tyre Mountain Cycle 21</h1>
+                <h1>{{product.name}}</h1>
             </div>
             <div class="col-md-3 text-right pqr"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                     class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
