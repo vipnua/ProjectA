@@ -5,9 +5,9 @@ import { Observable } from 'rxjs';
 import { IProduct } from 'src/interface/Product';
 import { ProductService } from 'src/service/product.service';
 
-class ImageSnippet {
-  constructor(public src: string, public file: File) { }
-}
+// class ImageSnippet {
+//   constructor(public src: string, public file: File) { }
+// }
 
 @Component({
   selector: 'app-product-add',
