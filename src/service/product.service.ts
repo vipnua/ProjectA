@@ -35,7 +35,7 @@ export class ProductService {
   }
 
   uploadFile(body: any): Observable<any> {
-    return this.httpClient.post(`https://image-uploader-anhhtus.herokuapp.com/api/upload`, body)
+    return this.httpClient.post(`https://res.cloudinary.com/dywccbjry/image/upload`, body)
   }
 
   // uploadImage(file: File): any {
