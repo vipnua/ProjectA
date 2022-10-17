@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AdminHeaderComponent } from './admin/layouts/admin-header/admin-header.component';
@@ -26,6 +25,11 @@ import { AdminLoginComponent } from './admin/auth/admin-login/admin-login.compon
 import { FooterLoginComponent } from './admin/auth/layouts/footer-login/footer-login.component';
 import { HearderLoginComponent } from './admin/auth/layouts/hearder-login/hearder-login.component';
 import { MainLoginComponent } from './admin/auth/layouts/main-login/main-login.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SigninComponent } from './auth/signin/signin.component';
+import { AuthHeaderComponent } from './auth/layouts/auth-header/auth-header.component';
+import { AuthFooterComponent } from './auth/layouts/auth-footer/auth-footer.component';
+import { AuthMainComponent } from './auth/layouts/auth-main/auth-main.component';
 
 
 @NgModule({
@@ -51,6 +55,13 @@ import { MainLoginComponent } from './admin/auth/layouts/main-login/main-login.c
     FooterLoginComponent,
     HearderLoginComponent,
     MainLoginComponent,
+
+    LoginComponent,
+    SigninComponent,
+    AuthFooterComponent,
+    AuthMainComponent,
+    AuthHeaderComponent
+
   ],
   imports: [
     BrowserModule,

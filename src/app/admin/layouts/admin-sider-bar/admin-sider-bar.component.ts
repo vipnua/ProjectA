@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-sider-bar.component.css']
 })
 export class AdminSiderBarComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
