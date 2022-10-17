@@ -16,6 +16,7 @@ import { AdminMainComponent } from './admin/layouts/admin-main/admin-main.compon
 import { AuthMainComponent } from './auth/layouts/auth-main/auth-main.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SigninComponent } from './auth/signin/signin.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 
 
@@ -36,6 +37,7 @@ const routes: Routes = [
     { path: 'signin', component:SigninComponent },
   ]},
   { path: 'home', component: HomePageComponent},
+  {path:'product/:id', component:ProductDetailComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
