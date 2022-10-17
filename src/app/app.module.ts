@@ -29,7 +29,7 @@ import { MainLoginComponent } from './admin/auth/layouts/main-login/main-login.c
     HomePageComponent,
     ProductDetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
     AdminHeaderComponent,
     AdminFooterComponent,
     AdminSiderBarComponent,
