@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient  } from '@angular/common/http';
 import {FormGroup,FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
 @Component({
@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit {
       password:[''],
   })
   }
-  API = 'http://localhost:3000/users';
+  API = 'https://api-manigiao.vercel.app/api/users';
+  
   login(){
     this.http.get<any>(this.API)
     .subscribe(res=>{

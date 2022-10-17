@@ -17,7 +17,7 @@ export class SigninComponent implements OnInit {
       email:[''],
       password:[''],
   })}
-  API = 'http://localhost:3000/users';
+  API = 'https://api-manigiao.vercel.app/api/users';
   signin(){
     this.http.get<any>(this.API)
     .subscribe(res=>{

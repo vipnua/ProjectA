@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit} from '@angular/core';
 import {FormGroup,FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-admin-login',
   templateUrl: './admin-login.component.html',
@@ -16,8 +17,9 @@ export class AdminLoginComponent implements OnInit {
       email:[''],
       password:[''],
   })}
+  API = 'https://api-manigiao.vercel.app/api/';
   login(){
-    this.http.get<any>('http://localhost:3000/users')
+    this.http.get<any>(this.API +`users`)
     .subscribe(res=>{
       const user = res.find((a:any)=>{
         return a.email  === this.loginForm.value.email  && a.password === this.loginForm.value.password &&a.role===1;
