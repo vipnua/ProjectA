@@ -1,0 +1,57 @@
+<div class="nk-block nk-block-lg">
+    <div class="nk-block-head">
+        <div class="nk-block-head-content">
+            <h2 class="nk-block-title">Products List</h2>
+        </div>
+    </div>
+    <div class="card card-preview">
+        <table class="table table-tranx">
+            <thead>
+                <tr class="tb-tnx-head">
+                    <th class=""><span class="">#</span></th>
+                    <th class="">
+                        <span>Name</span>
+                    </th>
+                    <th>
+                        <span>Image</span>
+                    </th>
+                    <th>
+                        <span>Price</span>
+                    </th>
+                    <th class="">
+                        <span class="tb-tnx-total">Description</span>
+                    </th>
+                    <th class="tb-tnx-action">
+                        <span>Action</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tb-tnx-item" *ngFor="let product of products">
+                    <td class="">
+                        <a href="#"><span>{{product.id}}</span></a>
+                    </td>
+                    <td class="">
+                        <span class="title">{{product.name}}</span>
+                    </td>
+                    <td>
+                        <span class=""><img src="{{product.imageUrl}}" width="100" height="100" alt=""></span>
+                    </td>
+                    <td>
+                        <span class="">{{product.price}}</span>
+                    </td>
+                    <td class="">
+                        <span class="">{{product.description}}</span>
+                    </td>
+                    <td class="">
+                        <div class="d-flex align-items-center">
+                            <a href="admin/product/{{ product.id }}/edit" class="btn btn-success mx-1">Edit</a>
+                            <button (click)="delete(product.id)" class="btn btn-danger">Remove</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div><!-- .card -->
+    <a href="admin/product-add" class="btn btn-sm btn-primary my-3">Add new product</a>
+</div><!-- nk-block -->

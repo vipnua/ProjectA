@@ -1,0 +1,36 @@
+<div class="col-lg-6 mx-auto">
+    <div class="card h-100">
+        <div class="card-inner">
+            <div class="card-head">
+                <h5 class="card-title">Update Product</h5>
+            </div>
+            <form (submit)="onHandleEdit()" *ngIf="product" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="form-label" for="cf-full-name">Name</label>
+                    <input type="text" class="form-control" name="product.name" [(ngModel)]="product.name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cf-email-address">Price</label>
+                    <input type="number" class="form-control" name="product.price" [(ngModel)]="product.price">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cf-phone-no">Image</label>
+                    <input type="file" class="form-control" name="product.imageUrl">
+                    <img src="" alt="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cf-default-textarea">Description</label>
+                    <div class="form-control-wrap">
+                        <textarea class="form-control form-control-sm" name="product.description"
+                            [(ngModel)]="product.description" placeholder="Write your description"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-primary">Update</button>
+
+                </div>
+            </form>
+            <a href="admin/products" class=" btn btn-lg btn-sm btn-primary my-3">Back</a>
+        </div>
+    </div>
+</div>
