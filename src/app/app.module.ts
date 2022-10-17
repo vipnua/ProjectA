@@ -8,8 +8,6 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 import { AdminHeaderComponent } from './admin/layouts/admin-header/admin-header.component';
 import { AdminFooterComponent } from './admin/layouts/admin-footer/admin-footer.component';
@@ -34,6 +32,7 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { AuthHeaderComponent } from './auth/layouts/auth-header/auth-header.component';
 import { AuthFooterComponent } from './auth/layouts/auth-footer/auth-footer.component';
 import { AuthMainComponent } from './auth/layouts/auth-main/auth-main.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 
 @NgModule({
