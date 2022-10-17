@@ -4,7 +4,7 @@
             <div class="card-head">
                 <h5 class="card-title">Add New Product</h5>
             </div>
-            <form [formGroup]="productData" #product="ngForm" (ngSubmit)="onHandleAdd(product.value, imageUrl.files)">
+            <form [formGroup]="productData" #product="ngForm" (ngSubmit)="onHandleAdd(product.value)">
                 <div class="form-group">
                     <label class="form-label" for="cf-full-name">Name</label>
                     <input type="text" class="form-control" formControlName="name" ngModel>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="cf-phone-no">Image</label>
-                    <input type="file" class="form-control" formControlName="imageUrl" #imageUrl>
+                    <input type="file" class="form-control" name="imageUrl" (change)="onHandleInput($event)">
                     <img width="150" height="150" alt="">
                 </div>
                 <div class="form-group">

@@ -51,6 +51,8 @@ export class ProductAddComponent implements OnInit {
 
   // }
 
+  file: any;
+
   productData = this.fb.group({
     "name": ['', [Validators.required, Validators.minLength(4)]],
     "price": ['', [Validators.required]],
@@ -61,20 +63,25 @@ export class ProductAddComponent implements OnInit {
     return this.productData.controls
   }
 
-  onHandleAdd(product: IProduct, fileImage: any) {
-
-
-    product.imageUrl = fileImage[0].name
-    return this.productService.addProduct(product).subscribe(data => {
-      if (typeof data === 'object') {
-        const formData = new FormData();
-        formData.append('Files', fileImage[0])
-        formData.append('imageUrl', product.imageUrl)
-
-        this.productService.uploadFile(formData)
-      }
-      this.router.navigateByUrl('admin/products')
-    })
+  onHandleInput(event: any) {
+    this.file = event.target.files[0];
+    console.log(event.target.files[0]);
 
   }
+
+  onHandleAdd(product: IProduct) {
+    let formData = new FormData()
+    formData.set('file', this.file)
+    this.http.post(`http://localhost:3000/products?imageUrl`, formData).subscribe((res) => {
+      console.log(res);
+
+    })
+
+    // return this.productService.addProduct(product).subscribe(data => {
+    //   this.router.navigateByUrl('admin/products')
+    // })
+
+  }
+
+
 }
