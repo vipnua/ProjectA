@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product A",
+      "price": 31231,
+      "description": "ưqerưeqrwerq",
+      "imageUrl": "box.jpg"
+    }
+  ]
+}

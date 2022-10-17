@@ -1,9 +1,7 @@
 <div class="nk-block nk-block-lg">
     <div class="nk-block-head">
         <div class="nk-block-head-content">
-            <h4 class="nk-block-title">Transaction List - With Action</h4>
-            <p>The following table can be use for <strong class="text-primary">invoice, payment history</strong> related
-                transaction.</p>
+            <h2 class="nk-block-title">Products List</h2>
         </div>
     </div>
     <div class="card card-preview">
@@ -24,38 +22,31 @@
                         <span class="tb-tnx-total">Description</span>
                     </th>
                     <th class="tb-tnx-action">
-                        <span>&nbsp;</span>
+                        <span>Action</span>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="tb-tnx-item">
+                <tr class="tb-tnx-item" *ngFor="let product of products">
                     <td class="">
-                        <a href="#"><span>4947</span></a>
+                        <a href="#"><span>{{product.id}}</span></a>
                     </td>
                     <td class="">
-                        <span class="title">Enterprize Year Subscription</span>
+                        <span class="title">{{product.name}}</span>
                     </td>
                     <td>
-                        <span class="date">10-05-2019</span>
+                        <span class=""><img src="{{product.imageUrl}}" width="100" height="100" alt=""></span>
                     </td>
                     <td>
-                        <span class="date">10-13-2019</span>
+                        <span class="">{{product.price}}</span>
                     </td>
                     <td class="">
-                        <span class="amount">$599.00</span>
+                        <span class="">{{product.description}}</span>
                     </td>
-                    <td class="tb-tnx-action">
-                        <div class="dropdown">
-                            <a class="text-soft dropdown-toggle btn btn-icon btn-trigger" data-bs-toggle="dropdown"><em
-                                    class="icon ni ni-more-h"></em></a>
-                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-xs">
-                                <ul class="link-list-plain">
-                                    <li><a href="#">View</a></li>
-                                    <li><a href="#">Edit</a></li>
-                                    <li><a href="#">Remove</a></li>
-                                </ul>
-                            </div>
+                    <td class="">
+                        <div class="d-flex align-items-center">
+                            <a href="admin/product/{{ product.id }}/edit" class="btn btn-success mx-1">Edit</a>
+                            <button (click)="delete(product.id)" class="btn btn-danger">Remove</button>
                         </div>
                     </td>
                 </tr>

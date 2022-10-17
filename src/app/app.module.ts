@@ -10,7 +10,9 @@ import { AdminMainComponent } from './admin/layouts/admin-main/admin-main.compon
 import { ContentComponent } from './admin/components/content/content.component';
 import { ProductAddComponent } from './admin/components/product-add/product-add.component';
 import { ProductListComponent } from './admin/components/product-list/product-list.component';
-import { ProductDetailComponent } from './admin/components/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductUpdateComponent } from './admin/components/product-update/product-update.component';
 
 
 
@@ -24,11 +26,14 @@ import { ProductDetailComponent } from './admin/components/product-detail/produc
     ContentComponent,
     ProductListComponent,
     ProductAddComponent,
-    ProductDetailComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
