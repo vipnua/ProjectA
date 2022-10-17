@@ -1,9 +1,9 @@
 <app-header></app-header>
-<div class="container py-4 my-4 mx-auto d-flex flex-column">
+<div class="container py-4 my-4 mx-auto d-flex flex-column" *ngIf="product">
     <div class="header">
         <div class="row r1">
             <div class="col-md-9 abc">
-                <h1>Tyre Mountain Cycle 21</h1>
+                <h1>{{product.name}}</h1>
             </div>
             <div class="col-md-3 text-right pqr"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                     class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
@@ -14,24 +14,24 @@
         <div class="row r3">
             <div class="col-md-5 p-0 klo">
                 <ul>
-                    <li>100% Quality</li>
-                    <li>Free Shipping</li>
-                    <li>Easy Returns</li>
-                    <li>12 Months Warranty</li>
-                    <li>EMI Starting from (On Credit Cards)</li>
-                    <li>Normal Delivery : 4-5 Days</li>
-                    <li>Express Delivery : 2-3 Days</li>
-                    <li>COD Available (All Over India)</li>
+                    <li>Tặng Phiếu mua hàng phụ kiện trị giá 200.000đ</li>
+                    <li>Tặng Balo Laptop (Hết quà hoàn tiền 100.000₫)</li>
+                    <li>Mua kèm Office Home&Student nhận quà 200,000đ</li>
+                    <li>Giảm 20% gói Bảo hành Mở rộng 12 tháng</li>
+                    <li>Trợ giá tựu trường giảm thêm đến 500,000đ</li>
+                    <li>Nhập mã TGDD giảm 4% tối đa 200.000đ cho đơn hàng từ 500.000đ trở lên khi thanh toán qua Ví Moca
+                        trên ứng dụng Grab</li>
                 </ul>
             </div>
-            <div class="col-md-7"> <img src="" width="90%" height="95%"> </div>
+            <div class="col-md-7"> <img src="{{product.imageUrl}}" width="90%" height="95%"> </div>
         </div>
     </div>
     <div class="footer d-flex flex-column mt-5">
         <div class="row r4">
             <div class="col-md-2 myt des"><a href="#">Description</a></div>
-            <div class="col-md-2 myt "><a href="#">Review</a></div>
+            <div class="col-md-2 myt "><a href="#">{{product.description}}</a></div>
             <div class="col-md-2 mio offset-md-4"><a href="#">ADD TO CART</a></div>
+            
             <div class="col-md-2 myt "><button type="button" class="btn btn-outline-warning"><a href="#">BUY
                         NOW</a></button></div>
         </div>

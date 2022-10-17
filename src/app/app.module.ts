@@ -7,6 +7,10 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 import { AdminHeaderComponent } from './admin/layouts/admin-header/admin-header.component';
 import { AdminFooterComponent } from './admin/layouts/admin-footer/admin-footer.component';
 import { AdminSiderBarComponent } from './admin/layouts/admin-sider-bar/admin-sider-bar.component';
