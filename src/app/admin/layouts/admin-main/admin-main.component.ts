@@ -10,7 +10,6 @@ export class AdminMainComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('123')
   }
 
 }
