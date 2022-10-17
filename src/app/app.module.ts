@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +15,9 @@ import { ContentComponent } from './admin/components/content/content.component';
 
 import { ProductAddComponent } from './admin/components/product-add/product-add.component';
 import { ProductListComponent } from './admin/components/product-list/product-list.component';
-import { ProductDetailComponent } from './admin/components/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductUpdateComponent } from './admin/components/product-update/product-update.component';
 
 
 
@@ -49,23 +49,26 @@ import { AuthMainComponent } from './auth/layouts/auth-main/auth-main.component'
 
     ProductListComponent,
     ProductAddComponent,
-    ProductDetailComponent,
+    ProductUpdateComponent,
 
     AdminLoginComponent,
     FooterLoginComponent,
     HearderLoginComponent,
     MainLoginComponent,
+
     LoginComponent,
     SigninComponent,
     AuthFooterComponent,
     AuthMainComponent,
     AuthHeaderComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
