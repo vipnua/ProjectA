@@ -1,9 +1,30 @@
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd0ed17eeee7d2a209493df35e6fe86e818c4b7c
   "users": [
     {
       "email": "admin@gmail.com",
       "password": "12345678",
+<<<<<<< HEAD
       "role": 1
+=======
+      "role": 1,
+      "id": 1
+    },
+    {
+      "name": "giang2",
+      "email": "3admin@gmail.com",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "name": "giang",
+      "email": "12admin@gmail.com",
+      "password": "12345678",
+      "id": 3
+>>>>>>> fd0ed17eeee7d2a209493df35e6fe86e818c4b7c
     }
   ],
   "products": [
@@ -97,6 +118,7 @@
       "description": "Phá cách với diện mạo mạnh mẽ đến từ laptop Acer Nitro 5 Gaming AN515 45 R6EV R5 5600H (NH.QBMSV.006) mang đến cho người dùng hiệu năng ổn định, hỗ trợ bạn trong mọi tác vụ hằng ngày hay chiến những trận game cực căng một cách mượt mà.",
       "price": 19000000,
       "imageUrl": "https://cdn.tgdd.vn/Products/Images/44/271042/acer-aspire-7-gaming-a715-75g-58u4-i5-nhq97sv004-1-1.jpg"
+<<<<<<< HEAD
     },
     {
       "name": "dắeqr",
@@ -106,4 +128,9 @@
       "id": 15
     }
   ]
+=======
+    }
+  ]
+
+>>>>>>> fd0ed17eeee7d2a209493df35e6fe86e818c4b7c
 }
