@@ -17,7 +17,7 @@ export class AdminLoginComponent implements OnInit {
       email:[''],
       password:[''],
   })}
-  API = 'https://api-manigiao.vercel.app/api/';
+  API = 'https://kls32r-8080.preview.csb.app/api/';
   login(){
     this.http.get<any>(this.API +`users`)
     .subscribe(res=>{
