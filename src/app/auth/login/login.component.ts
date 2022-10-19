@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
       password:[''],
   })
   }
-  API = 'https://api-manigiao.vercel.app/api/users';
+  API = 'https://kls32r-8080.preview.csb.app/api/users';
   
   login(){
     this.http.get<any>(this.API)
