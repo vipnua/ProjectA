@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsServiceService {
-  API = `https://api-manigiao.vercel.app/api/products`;
+  API = `https://kls32r-8080.preview.csb.app/api/products`;
   constructor(private httpClient: HttpClient) {
   }
   getProducts(): Observable<IProduct[]> {
