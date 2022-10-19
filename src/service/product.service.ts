@@ -8,7 +8,7 @@ import { IProduct } from 'src/interface/Product';
 })
 export class ProductService {
 
-  API = 'https://api-manigiao.vercel.app/api/products';
+  API = 'https://kls32r-8080.preview.csb.app/api/products';
 
   constructor(private httpClient: HttpClient) { }
 
